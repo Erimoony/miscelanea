@@ -32,4 +32,18 @@ public class Ejercicios {
         return (3.14 * (dato1 * dato1) * dato2);
         }
 
+        public double Longitud(double dato1){
+            return ((3.1416 * 3.1416) * dato1);
+        }
+    
+        public double Circunferencia (double dato1){
+            return (3.1416 * (dato1 * dato1));
+}
+public double circuferencia_Longitud(double dato1){
+    return ((3.1416 * 3.1416) * dato1);
+}
+
+public double circuferencia_area (double dato1){
+    return (3.1416 * (dato1 * dato1));
+}
 }

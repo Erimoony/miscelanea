@@ -74,6 +74,9 @@ public class Main {
             case 6:
             Volumen();
             break;
+            case 7:
+            circuferencia();
+            break;
         }
     }
     // 1.1
@@ -188,6 +191,22 @@ System.out.println("1.6 Área y Volúmen del cilindro" );
         dato4 = ejercicios.Volumen(dato1, dato2);
         System.out.println("El volúmen del cilindro es: " + dato4);
 }
-}
+//1.7
+static void circuferencia(){
+double dato1;
+double dato2;
+double dato3;
+Ejercicios ejercicios = new Ejercicios();
+System.out.println("1.7 Longitud y área de la circunferencia" );
+        Scanner src = new Scanner(System.in);
 
+
+        System.out.println("Ingrese el radio de la circunferencia");
+        dato1 = src.nextDouble();
+        dato2 = ejercicios.circuferencia_Longitud(dato1);
+        System.out.println("La longitud de la circunferencia: " + dato2);
+        dato3 = ejercicios.circuferencia_area(dato1);
+        System.out.println("El área de la circunferencia es: " + dato3);
+}
+}
 
