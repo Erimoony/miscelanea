@@ -269,6 +269,15 @@ static void Condicionales() {
         case 4:
         sure();
         break;
+        case 5:
+        cero();
+        break;
+        case 6:
+        sumul();
+        break;
+        case 7:
+        año();
+        break;
     }
 }
 public static void pone(){
@@ -331,5 +340,42 @@ public static void sure(){
 
     resul= ejercicios.sure(num1, num2);
     System.out.println("El resultado es :" + resul);
+}
+//2.5
+public static void cero(){
+    int num1;
+    int num2;
+
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Dados dos números A y B encontrar el cociente entre A y B. Recordar que la división por cero no está definida, en ese caso debe aparecer una leyenda anunciando que la división no es posible");
+    Scanner src=new Scanner(System.in);
+    System.out.println("Ingrese el primer número: ");
+    num1=src.nextInt();
+    System.out.println("Ingrese el segundo número: ");
+    num2=src.nextInt();
+
+    ejercicios.cero(num1, num2);
+    System.out.println("");
+}
+//2.6
+public static void sumul(){
+    int num1;
+    int num2;
+    int resul;
+
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Dados dos números A y B, sumarlos si al menos uno de ellos es negativo, en caso contrario multiplicarlos");
+    Scanner src=new Scanner(System.in);
+    System.out.println("Ingrese el primer número: ");
+    num1=src.nextInt();
+    System.out.println("Ingrese el segundo número: ");
+    num2=src.nextInt();
+
+    resul= ejercicios.sumul(num1, num2);
+    System.out.println("El resultado es: "+resul);
+}
+//2.7
+public static void año(){
+    
 }
 }
