@@ -60,5 +60,29 @@ public void pone(int num1) {
         System.out.println("El número  es negativo");
     }
 }
-
+public void mano(int num1, int num2){
+    if (num1>num2){
+        System.out.println(num1 + " Es mayor que" + num2);
+    }else if (num2>num1){
+        System.out.println(num2 +"Es mayor que"+ num1);
+    }else{
+        System.out.println("Los números son igual");
+    }
+}
+public void tres(int num1, int num2, int num3){
+    if(num1>num2 && (num1>num3)){
+        System.out.println(num1+" Es mayor que "+ num2+ " y " +num3);
+    }else if (num2>num1 && (num2>num3)){
+        System.out.println(num2+ " Es mayor que "+num1+ " y " +num3);
+    }else{
+        System.out.println(num3+ " Es mayor que " +num1+ " y " +num2);
+    }
+}
+public int sure(int num1, int num2){
+    if(num1<num2){
+        return num1+num2;
+    }else{
+        return num1-num2;
+    }
+}
 }

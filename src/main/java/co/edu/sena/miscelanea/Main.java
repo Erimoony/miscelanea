@@ -31,6 +31,9 @@ public class Main {
                 case 1:
                     operadores();
                     break;
+                case 2:
+                Condicionales();
+                break;
   
                 default:
                     System.out.println("Opción invalida");
@@ -241,13 +244,13 @@ static void Condicionales() {
 
     System.out.println("-------- MENÚ DE CONDICIONALES --------");
     System.out.println("Escoge alguna de las siguientes opciones");
-    System.out.println("1. Numero positivo o negativo   ");
+    System.out.println("1. Número positivo o negativo   ");
     System.out.println("2. Número mayor y menor");
-    System.out.println("3. 3 números enteros mayor y menor");
-    System.out.println("4. Números A y B sumar o restar");
-    System.out.println("5. Números A y B división ");
-    System.out.println("6. Números A y B multiplicar");
-    System.out.println("7. Año bisiesto o no");
+    System.out.println("3. Escribe 3 números enteros mayor y menor");
+    System.out.println("4. Números A y B que sumen o resten");
+    System.out.println("5. Números A y B que se dividan ");
+    System.out.println("6. Números A y B que se multipliquen");
+    System.out.println("7. Es año bisiesto o no");
 
     System.out.println("Selecciona una opción: ");
     Scanner src = new Scanner(System.in);
@@ -256,6 +259,15 @@ static void Condicionales() {
     switch (optc) {
         case 1:
         pone();
+        break;
+        case 2:
+        mano();
+        break;
+        case 3:
+        tres();
+        break;
+        case 4:
+        sure();
         break;
     }
 }
@@ -270,5 +282,54 @@ public static void pone(){
 
         ejercicios.pone(num1);
         System.out.println("");
+}
+//2.2
+public static void mano(){
+    int num1;
+    int num2;
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Escribir un algoritmo que reciba dos números por teclado y diga cuál es el mayor y cuál el menor");
+    Scanner src=new Scanner(System.in);
+    System.out.println("Ingrese el primer número: ");
+    num1= src.nextInt();
+    System.out.println("Ingrese el segundo número");
+    num2= src.nextInt();
+
+    ejercicios.mano(num1,num2);
+    System.out.println("");
+}
+//2.3
+public static void tres(){
+    int num1;
+    int num2;
+    int num3;
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Escriba un programa que lea tres números enteros positivos y que calcule e imprima en pantalla el menor y el mayor de ellos.");
+    Scanner src=new Scanner(System.in);
+    System.out.println("Ingresa el primer número: ");
+    num1=src.nextInt();
+    System.out.println("Ingresa el segundo número: ");
+    num2=src.nextInt();
+    System.out.println("Ingrese el tercer número: ");
+    num3=src.nextInt();
+
+    ejercicios.tres(num1, num2, num3);
+    System.out.println("");
+}
+//2.4
+public static void sure(){
+    int num1;
+    int num2;
+    int resul;
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Dados dos números A y B, sumarlos si A es menor que B o sino restarlos.");
+    Scanner src=new Scanner(System.in);
+    System.out.println("Ingrese el primer número: ");
+    num1=src.nextInt();
+    System.out.println("Ingrese el segundo número: ");
+    num2=src.nextInt();
+
+    resul= ejercicios.sure(num1, num2);
+    System.out.println("El resultado es :" + resul);
 }
 }
