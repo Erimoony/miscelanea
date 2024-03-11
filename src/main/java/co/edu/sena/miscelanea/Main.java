@@ -237,4 +237,24 @@ System.out.print("Ingrese el primer número: ");
     
     System.out.println("El promedio de los tres números ingresados es: " + promedio);
 }
+static void Condicionales() {
+
+    System.out.println("-------- MENÚ DE CONDICIONALES --------");
+    System.out.println("Escoge alguna de las siguientes opciones");
+    System.out.println("1. Numero positivo o negativo   ");
+    System.out.println("2. Número mayor y menor");
+    System.out.println("3. 3 números enteros mayor y menor");
+    System.out.println("4. Números A y B sumar o restar");
+    System.out.println("5. Números A y B división ");
+    System.out.println("6. Números A y B multiplicar");
+    System.out.println("7. Año bisiesto o no");
+
+    System.out.println("Selecciona una opción: ");
+    Scanner src = new Scanner(System.in);
+    int optc = src.nextInt();
+
+    switch (optc) {
+        
+    }
+}
 }
