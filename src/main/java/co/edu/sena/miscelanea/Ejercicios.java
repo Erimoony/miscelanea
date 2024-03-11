@@ -101,4 +101,12 @@ public int sumul(int num1, int num2){
         return num1*num2;
     }
 }
+public void año(int year){
+    if((year % 4 ==0 && year %100 !=0) || (year % 400 == 0)){
+        System.out.println(year + " El año si es bisiesto");
+    }else{
+        System.out.println(year + " El año no es bisiesto");
+    }
+}
+
 }

@@ -376,6 +376,13 @@ public static void sumul(){
 }
 //2.7
 public static void año(){
-    
+    int year;
+    Ejercicios ejercicios=new Ejercicios();
+    System.out.println("Escribir un algoritmo que determine si un año es bisiesto o no.");
+    Scanner src=new Scanner(System.in);
+
+    System.out.println("Ingresa el año: ");
+    year=src.nextInt();
+    ejercicios.año(year);
 }
 }
