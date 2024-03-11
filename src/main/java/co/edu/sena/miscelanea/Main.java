@@ -3,6 +3,8 @@ package co.edu.sena.miscelanea;
 
 import java.util.Scanner;
 
+import javax.swing.plaf.nimbus.State;
+
 /**
  * Menu y submenu
  *
@@ -77,6 +79,10 @@ public class Main {
             case 7:
             circuferencia();
             break;
+            case 8:
+            calcularPromedio();
+        break;
+
         }
     }
     // 1.1
@@ -208,5 +214,27 @@ System.out.println("1.7 Longitud y área de la circunferencia" );
         dato3 = ejercicios.circuferencia_area(dato1);
         System.out.println("El área de la circunferencia es: " + dato3);
 }
-}
+//1.8
+static void calcularPromedio(){
+double num1;
+double num2;
+double num3;
+double promedio;
+Ejercicios ejercicios = new Ejercicios();
+System.out.println("Promedio de tres numeros digitados" );
+Scanner src= new Scanner(System.in);
 
+System.out.print("Ingrese el primer número: ");
+    num1 = src.nextDouble();
+    
+    System.out.print("Ingrese el segundo número: ");
+     num2 = src.nextDouble();
+    
+    System.out.print("Ingrese el tercer número: ");
+     num3 = src.nextDouble();
+    
+    promedio = ejercicios.calcularPromedio(num1, num2, num3);
+    
+    System.out.println("El promedio de los tres números ingresados es: " + promedio);
+}
+}

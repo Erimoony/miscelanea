@@ -46,4 +46,8 @@ public double circuferencia_Longitud(double dato1){
 public double circuferencia_area (double dato1){
     return (3.1416 * (dato1 * dato1));
 }
+
+public double calcularPromedio(double num1, double num2, double num3) {
+    return (num1 + num2 + num3) / 3;
+}
 }
