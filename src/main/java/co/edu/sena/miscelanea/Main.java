@@ -29,7 +29,7 @@ public class Main {
                 case 1:
                     operadores();
                     break;
-
+  
                 default:
                     System.out.println("Opción invalida");
 
@@ -59,7 +59,10 @@ public class Main {
             case 1:
                 areatriangulo();
                 break;
-        
+            case 2:
+                suma();
+                break;
+
         }
     }
     // 1.1
@@ -83,5 +86,27 @@ public class Main {
         dato3 = ejercicios.areatriangulo(dato1,dato2);
         System.out.println("El area del triángulo es: " + dato3);
     }
-    
+    //1.2
+    static void suma() {
+
+        double num1;
+        double num2;
+        double num3;
+
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.out.println("1.2 Sumar dos números");
+        Scanner src = new Scanner(System.in);
+
+        System.out.println("Ingrese un primer número: ");
+        num1 = src.nextDouble();
+
+        System.out.println("Ingrese un segundo número: ");
+        num2 = src.nextDouble();
+
+        num3 = ejercicios.suma(num1, num2);
+        System.out.println("El resultado de la operación es: " + num3);
+    }
+
+
 }
