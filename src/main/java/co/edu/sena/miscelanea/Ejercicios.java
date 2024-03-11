@@ -24,5 +24,12 @@ public class Ejercicios {
         return lad * 4;
     
     }
-  
+    public double Area(double dato1, double dato2){
+        return ((3.14 * 2 * dato1 * dato2) + (3.14 * 2) * (dato1 * dato1));
+        }
+    
+        public double Volumen(double dato1, double dato2){
+        return (3.14 * (dato1 * dato1) * dato2);
+        }
+
 }

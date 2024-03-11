@@ -71,6 +71,9 @@ public class Main {
             case 5:
             Lado();
             break;
+            case 6:
+            Volumen();
+            break;
         }
     }
     // 1.1
@@ -165,7 +168,26 @@ static void Lado(){
         System.out.println("El lado de su cuadrado es de: " + lad + "," + " el área es de: " + area + ","
                 + " y el perímetro de: " + perimetro);
     }
+//1.6
+static void Volumen(){
+    double dato1;
+    double dato2;
+    double dato3;
+    double dato4;
+Ejercicios ejercicios= new Ejercicios();
+System.out.println("1.6 Área y Volúmen del cilindro" );
+        Scanner src = new Scanner(System.in);
 
+
+        System.out.println("Ingrese el radio del cilindro");
+        dato1 = src.nextDouble();
+        System.out.println("Ingrese la altura del cilindro");
+        dato2 = src.nextDouble();
+        dato3 = ejercicios.Area(dato1, dato2);
+        System.out.println("El área del cilindro es: " + dato3);
+        dato4 = ejercicios.Volumen(dato1, dato2);
+        System.out.println("El volúmen del cilindro es: " + dato4);
+}
 }
 
 
