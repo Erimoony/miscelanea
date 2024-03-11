@@ -254,7 +254,21 @@ static void Condicionales() {
     int optc = src.nextInt();
 
     switch (optc) {
-        
+        case 1:
+        pone();
+        break;
     }
+}
+public static void pone(){
+        int num1;
+        Ejercicios ejercicios = new Ejercicios();
+        System.out.println("Escribir un algoritmo para saber si el número ingresado por teclado es positivo o negativo." );
+        Scanner src= new Scanner(System.in);
+
+        System.out.println("Ingrese un número: ");
+        num1 = src.nextInt();
+
+        ejercicios.pone(num1);
+        System.out.println("");
 }
 }

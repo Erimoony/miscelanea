@@ -50,4 +50,15 @@ public double circuferencia_area (double dato1){
 public double calcularPromedio(double num1, double num2, double num3) {
     return (num1 + num2 + num3) / 3;
 }
+//Condicionales
+public void pone(int num1) {
+    if (num1 == 0) {
+        System.out.println("El número  es neutro");
+    } else if (num1 > 0) {
+        System.out.println("El número  es positivo");
+    } else {
+        System.out.println("El número  es negativo");
+    }
+}
+
 }
