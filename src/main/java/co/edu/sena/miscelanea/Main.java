@@ -29,17 +29,7 @@ public class Main {
                 case 1:
                     operadores();
                     break;
-                case 2:
-                    Condicionales();
-                    break;
-                case 3:
-                    Ciclos();
-                    break;
-                case 4:
-                    Arreglos();
-                    break;
-                case 99:
-                    break;
+
                 default:
                     System.out.println("Opción invalida");
 
@@ -67,30 +57,31 @@ public class Main {
 
         switch (opto) {
             case 1:
-                area();
+                areatriangulo();
                 break;
-            case 2:
-                suma();
-                break;
-            case 3:
-                cuad();
-                break;
-            case 4:
-                conver();
-                break;
-            case 5:
-                lado();
-                break;
-            case 6:
-                cilin();
-                break;
-            case 7:
-                circu();
-                break;
-            case 8:
-                prom();
-                break;
-
+        
         }
     }
+    // 1.1
+    static void areatriangulo() {
+
+        double dato1;
+        double dato2;
+        double dato3;
+
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.out.println("1.Area de un triángulo");
+        Scanner src = new Scanner(System.in);
+
+        System.out.println("Ingrese la base");
+        dato1= src.nextDouble();
+
+        System.out.println("Ingrese la altura");
+       dato2 = src.nextDouble();
+
+        dato3 = ejercicios.areatriangulo(dato1,dato2);
+        System.out.println("El area del triángulo es: " + dato3);
+    }
+    
 }
