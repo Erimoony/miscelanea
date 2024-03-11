@@ -65,6 +65,9 @@ public class Main {
             case 3:
             ele();
             break;
+            case 4:
+            conversion();
+            break;
         }
     }
     // 1.1
@@ -124,5 +127,20 @@ public class Main {
         resul = ejercicios.ele(nume1);
         System.out.println("El número elevado es:" + resul);
     }
+//1.4
+static void conversion(){
+    double euro;
+    double dolar;
+    Ejercicios ejercicios =new Ejercicios();
 
+ System.out.println("1.4 Convertir de euros a doláres" );
+        Scanner src = new Scanner(System.in);
+
+
+        System.out.println("Ingrese un valor en euros");
+        euro= src.nextDouble();
+
+        dolar = ejercicios.conversion(euro);
+        System.out.println("El valor en doláres es: " + dolar);
 }
+} 

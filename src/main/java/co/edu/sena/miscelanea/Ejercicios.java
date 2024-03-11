@@ -13,4 +13,7 @@ public class Ejercicios {
     public double ele(double nume1){
         return(nume1*nume1);
     }
+    public double conversion(double euro){
+        return (euro * 1.08);
+    }
 }
