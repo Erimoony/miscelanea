@@ -68,6 +68,9 @@ public class Main {
             case 4:
             conversion();
             break;
+            case 5:
+            Lado();
+            break;
         }
     }
     // 1.1
@@ -143,4 +146,26 @@ static void conversion(){
         dolar = ejercicios.conversion(euro);
         System.out.println("El valor en doláres es: " + dolar);
 }
-} 
+//1.5
+static void Lado(){
+        int lad;
+        int area;
+        int perimetro;
+
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.out.println("1.5 Lado de un cuadrado que muestre el área y el perímetro");
+        Scanner src = new Scanner(System.in);
+
+        System.out.println("Ingrese el lado del cuadrado: ");
+        lad = src.nextInt();
+
+        area = ejercicios.lado_area(lad);
+        perimetro = ejercicios.lado_perimetro(lad);
+        System.out.println("El lado de su cuadrado es de: " + lad + "," + " el área es de: " + area + ","
+                + " y el perímetro de: " + perimetro);
+    }
+
+}
+
+

@@ -16,4 +16,13 @@ public class Ejercicios {
     public double conversion(double euro){
         return (euro * 1.08);
     }
+    public int lado_area(int lad) {
+        return lad * lad;
+    }
+
+    public int lado_perimetro(int lad) {
+        return lad * 4;
+    
+    }
+  
 }
