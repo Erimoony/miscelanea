@@ -62,7 +62,9 @@ public class Main {
             case 2:
                 suma();
                 break;
-
+            case 3:
+            ele();
+            break;
         }
     }
     // 1.1
@@ -107,6 +109,20 @@ public class Main {
         num3 = ejercicios.suma(num1, num2);
         System.out.println("El resultado de la operación es: " + num3);
     }
+    //1.3
+    static void ele(){
+        double nume1;
+        double resul;
 
+        Ejercicios ejercicios = new Ejercicios();
+        System.out.println("1.3 Número elvado al cuadrado");
+        Scanner src = new Scanner(System.in);
+
+        System.out.println("Ingresa el número a elevar: ");
+        nume1 = src.nextDouble();
+
+        resul = ejercicios.ele(nume1);
+        System.out.println("El número elevado es:" + resul);
+    }
 
 }

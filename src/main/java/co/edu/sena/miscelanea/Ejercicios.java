@@ -9,4 +9,8 @@ public class Ejercicios {
     public double suma(double num1, double num2){
         return (num1 + num2);
     }
+
+    public double ele(double nume1){
+        return(nume1*nume1);
+    }
 }
